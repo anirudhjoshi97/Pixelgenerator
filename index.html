@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+     
+    function addition(a,b){
+        if (a == 0){
+            return "you cannot add anything with 0"
+        }
+        else if(b == 0) {
+            return "the answer is the number that you have put in the first number that is  " + a;
+        
+        }
+        else {
+            return a + b;
+        }
+
+    }
+    function subtraction(a,b){
+        return a - b;
+    }
+    function multiplication(a,b){
+        return a * b;
+    }
+    function division(a,b){
+        if (b == 0) {
+            return "Error: division by zero";
+        } else {
+            return a / b;
+        }
+    
+
+    
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The great</title>
+    <style>
+    .heading {
+        text-align: center;
+        background-color: aquamarine;
+        color: black;
+        border-style: dotted;
+        border-width: 10px;
+        margin-bottom: 30px;
+        border-color:yellow;
+        
+    }
+    .ABOUTME {
+        text-align: center;
+        color: blue;
+    }
+    button {
+        color: yellowgreen;
+        position:static
+    }
+    .para{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 300px;
+        border-style: dashed;
+        border-width: 5px;
+        border-color: blueviolet;
+
+    }
+    p{
+        color: black;
+        text-decoration: underline;
+
+    }
+    .calculator {
+        float: left;
+        width: 320px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+
+        
+
+        
+    }
+    .paraa{
+        float: right;
+			width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            
+            
+        
+
+
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1> THIS IS MY BLOG</h1>
+    </div>
+    <div class="ABOUTME">
+        <label for="ID">Click here to know about me</label>
+        <a class="PERSONAL" href="https://www.google.com">
+        <button class="PERSONAL"> click now</button>
+        </a>
+    </div>
+    <div class="para">
+        <p> Hi this is a summary about me please read it so you can learn more about me</p>
+    </div>
+    <div class="calculator">
+        <h2>With this division you will be able to calculate</h2>
+        <label for="firstnumber" class="purple">First number: </label>
+        <input type="number" id="firstnumber" name="firstnumber"><br><br>
+        <label for="secondnumber" class="purple">Second number:</label>
+        <input type="number" id="secondnumber" name="secondnumber"><br><br>
+        <button type="button" onclick="alert(addition(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Addition</button>
+        <button type="button" onclick="alert(subtraction(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Subtraction</button>
+        <button type="button" onclick="alert(multiplication(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Multiplication</button>
+        <button type="button" onclick="alert(division(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Division</button>
+    </div>
+    <div class="paraa">this is just to check if I can add another box on the right side of the calculator or not</div>
+
+
+    
+</body>
+</html>
